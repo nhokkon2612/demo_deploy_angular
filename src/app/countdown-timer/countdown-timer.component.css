@@ -1,0 +1,13 @@
+.time-button {
+  height: 70px;
+  width: 70px;
+  background-color: antiquewhite;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  vertical-align: middle;
+  border: solid;
+}
+.action-timer{
+  text-align: center;
+}

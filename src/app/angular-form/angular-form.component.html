@@ -1,0 +1,22 @@
+<form #regisForm="ngForm">
+  <div>
+    <label>Email: </label>
+    <br>
+    <input type="text" name="email" [(ngModel)]="book.name" minlength="4" maxlength="10" required="required">
+    <div>
+
+    </div>
+  </div>
+  <div>
+    <label>Password: </label>
+    <br>
+    <input type="text" name="password" [(ngModel)]="book.year">
+  </div>
+  <div>
+    <label>Phone: </label>
+    <br>
+    <input type="text" name="phone" [(ngModel)]="book.stars">
+  </div>
+  <button (click)="getInfo(regisForm.value)"   *ngIf="regisForm.valid" disabled > Submit</button>
+  <button (click)="getInfo(regisForm.value)"    *ngIf="regisForm.invalid" disabled > Submit</button>
+</form>
